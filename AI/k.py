@@ -1,8 +1,8 @@
 # Make sure to install required packages using the terminal:
-# pip install langchain openai streamlit
+#pip install langchain openai streamlit
 import streamlit as st
-from langchain.chat_models import ChatOpenAI
-from langchain.schema import HumanMessage
+from langchain_openai import ChatOpenAI
+from langchain_core.messages import HumanMessage
 
 llm = ChatOpenAI(
     model="llama-3.1-8b-instant", 
